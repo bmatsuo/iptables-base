@@ -15,6 +15,8 @@ those on tcp ports 22 (ssh), 80 (http), or 443 (https).
 
 Outgoing and forward connections are not restricted (FIXME).
 
+Dropped connections are logged on a limited basis.
+
 ##Usage
 
 Apply configuration and update etc/iptables.rules
