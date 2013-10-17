@@ -17,10 +17,10 @@ Outgoing and forward connections are not restricted (FIXME).
 
 ##Usage
 
-To update etc/iptables.rules
+Apply configuration and update etc/iptables.rules
 
     sudo ./iptables-init.sh > etc/iptables.rules
 
-Persistant config across restarts
+Persistant config across restarts (be sure you know what you're doing)
 
     sudo rsync -auv etc/ /etc/
