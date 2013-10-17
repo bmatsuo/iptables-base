@@ -24,3 +24,4 @@ Apply configuration and update etc/iptables.rules
 Persistant config across restarts (be sure you know what you're doing)
 
     sudo rsync -auv etc/ /etc/
+    sudo iptables-restore < /etc/iptables.rules
