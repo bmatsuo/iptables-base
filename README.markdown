@@ -2,10 +2,10 @@ Configuration for Linux iptables
 
 ##Contents
 
-This repository contains a script to create a set of iptables rules,
-`etc/iptables.rules` for use with `iptables-restore`. For comparison,
-there is a shell script `iptables-init.sh` which performs the same
-initialization.
+This table contains a base iptables configuration, `etc/iptables.rules` for use
+with `iptables-restore`. For comparison there is a shell script,
+`iptables-init.sh`. This script generated the configurations, although either
+can be used to initialize a firewall.
 
 ##Usage
 
