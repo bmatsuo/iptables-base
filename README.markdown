@@ -11,7 +11,7 @@ can be used to initialize a firewall.
 ##Description
 
 The only incoming connections allowed are those on the loopback interface or
-those on tcp ports 22 (ssh), 80 (http), or 443 (https).
+those on tcp ports 22 (ssh), 80 (http), 443 (https), or 6667 (znc).
 
 Outgoing and forward connections are not restricted (FIXME).
 
