@@ -23,7 +23,12 @@ Apply configuration and update etc/iptables.rules
 
     sudo ./iptables-init.sh > etc/iptables.rules
 
-Persistant config across restarts (be sure you know what you're doing)
+Update config and persistant across restarts (be sure you know what you're doing)
 
-    sudo rsync -auv etc/ /etc/
-    sudo iptables-restore < /etc/iptables.rules
+    rsync -auv etc/ /etc/
+    /etc/network/if-pre-up.d/iptablesload
+
+Reload config from the repository copy, even if it is not newer
+
+    rsync -av etc/ /etc/
+    /etc/network/if-pre-up.d/iptablesload
